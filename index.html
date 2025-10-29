@@ -1,0 +1,336 @@
+<html>
+<!--Recuerda implementar logos, redes sociales-->
+<!--Eliminar animacion estrella, cuando estrella implementada este-->
+<!--Recuerda implementar tipo de letra: ya descargado-->
+<!--implementar boton-->
+<!--diseñar el resto de links-->
+<!--discutir fondo contenedor derecho, puesto que fondo contenedor derecho es basura infecta, nota mental... horrible degradado-->
+<!--Debatir nombre de pagina, aunque nombre ser espetacular-->
+
+<head>
+  <title>Las nochecitas del DJ David</title> 
+  <!-- _______________________________________________________ESTILOS________________________________________________________________ -->
+  <!-- _______________________________________________________ESTILOS________________________________________________________________ -->
+  <!-- _______________________________________________________ESTILOS________________________________________________________________ -->
+    <style>
+  body {
+     background-color: 2d0f13; /*     *-*     */
+      margin: 0;
+      font-family: Arial, sans-serif; /*tipo de letra que quitare, hoy no, mañana :/*/
+      height: 100%;
+      overflow-x: hidden; /*Esto hace que no se pueda escrolear para la izquierda, se me salio el plato :( y el diseño se me fue a la mierda, no quitar pls*/
+    }
+ .galeria {
+  z-index: 9;
+      display: grid; /*Uso de un grid de elementos para mas alante superponer imagenes, no use position porque esta bug, #aprendidaporlasmalas*/
+      width: 70%; /*El tamaño del contenedor que almacena el carrusel de imagenes*/
+      height: 70%;
+      overflow: hidden;
+      position: relative; /*Esto no deberia estar aqui, pero esto hace que funcione, no tocar*/
+      margin: 0px; /*Por diseño no quiero que exista ni margen ni padding*/
+      padding: 0px;
+       /*El contenedor ocupara todo el espacio disponible dentro de su contedor padre*/
+    }
+
+    .galeria img {
+      grid-row: 1; /*Coloco todas las imagenes dentro de galeria superpuestas sobre la misma fila*/
+      grid-column: 1; /*Coloco todas las imagenes dentro de galeria superpuestas sobre la misma columna*/
+      width: 100%;
+      height: 730px;
+      opacity: 0; /*para lograr la animacion que deseo les aplico a todas 0 de opacidad por defecto*/
+      transition: opacity 1s ease-in-out; /*Tiempo de transicion entre opacidad 0 y opacidad 1 cuando activa(Buscar mas abajo), interactua*/
+    }
+    .texto_superiro {
+      grid-row: 1;
+      grid-column: 1;
+      /*El contenedor debe situarse sin dejar espacio a galeria, entonces lo situo en el mismo grid que galeria, nada de espacio personal*/
+      color: white; /*color texto*/
+      text-align: center;
+      z-index: 10; /*Defino que la posicion del texto debe superponerse(10) sobre la imagen de .galeria, dandole mayor prioridad */
+      padding-top: 25%;
+    }
+
+
+    /*En desuso temporal*/
+    .fondo_superior { /*Fondo para que no se vea el ciruclo cuando se transparenta la imagen al cambiar de fase en el morphing*/
+      height: 730px;
+      width: 100%;
+      background-color: #2d0f13;
+      margin-right: 120px;
+      grid-row: 1;
+      grid-column: 1;
+      
+      }
+    .galeria img.activa {
+      /*Si imagen activa entonces opacidad igual a 1*/
+      opacity: 1;
+    }
+   
+    .cabecera { /*desuso temporal*/
+     
+      background-color: #2d0f13  ;
+      color: white;
+      margin: 0;
+      padding: 0;
+    
+    
+    
+    
+    }
+    .contenedor {
+      /*almacenamiento de galeria y caja*/
+      display: flex;
+      
+     
+    }
+    .caja {
+    /*Funcion, situar todo su contenido a la izquierda de galeria*/
+    width: 30%;
+    height: 730px;
+      text-align: center;
+      background-image: linear-gradient(to top, #212121, #5b4218); /*Degradado del contenedor derecho*/
+      border: 5px solid black;
+      flex: 1;
+
+  }
+
+
+    .platos { /*En desuso temporal*/
+      
+      /*top down, TOP DOWN*/
+      transform: translate(100px, 100px);
+      
+      /*Dandole Forma en altura*/
+      padding: 30px;
+
+      /*Platos con forma de plato, check*/
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      
+      background: white;
+     
+      /*Filtro epico cuadno cambia a hover*/
+      filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+    }
+    .platos:hover { /*Cuando el raton esta sobre el elemento...*/
+      
+    font-size: 140%;
+    background: rgb(158, 158, 158);
+    }
+    
+
+    .contactanos-2 { /*Dibujar estrella derecha*/
+      transform: translate(180px, 20px); /*Muevo la estrellita para abajo*/
+      width: 200px;
+  height: 200px;
+  background: gold;
+  clip-path: polygon(
+    /*arriba abajo al centro y para dentro*/
+    50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%,
+    2% 35%, 39% 35%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  border: 5px solid black;
+ 
+
+    }
+    .contactanos { /*Dibujar esterlla izquierda*/
+      transform: translate(60px, 20px); /*Muevo la estrellita para abajo*/
+     
+      width: 200px;
+  height: 200px;
+  background: gold;
+  clip-path: polygon(
+    /*arriba abajo al centro y para dentro*/
+    50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%,
+    2% 35%, 39% 35%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  border: 5px solid black;
+  
+
+    }
+      .contactanos:hover { /*Animacion horrible cuando se pasa el raton sobre estrella izquierda*/
+        
+        /*Super cutre, recordar exterminar*/
+        font-size: 140%;
+        background-color: rgb(255, 236, 129);
+
+
+      }
+      .contactanos-2:hover { /*Animacion horrible cuando se pasa el raton sobre estrella izquierda*/
+        
+        /*Super cutre, recordar exterminar*/
+        font-size: 140%;
+        background-color: rgb(255, 236, 129);
+
+
+      }
+
+      .personal {  /*En desuso temporal*/
+        transform: translateX(100px);
+        width: 200px;
+  height: 120px;
+  
+  background-color: #ffffff;
+  border-radius: 50%;
+  border-style: dashed;
+  border: 5px solid black;
+  text-align: center;
+  position: relative;
+  padding-top: 80px;
+  z-index: 0;
+  animation: pulso 1.5s infinite;
+  transform: translateX(100px);
+  /*animation: mover 2s infinite alternate;*/
+  /*No por ahora, demasiada aura*/
+}
+@keyframes pulso {  /*En desuso temporal*/
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+ /*En desuso temporal*/
+@keyframes mover { /*Algun dia, hoy no sera ese dia*/
+  from { left: 100px; }
+  to { left: 200px; }
+}
+      
+
+
+
+    .zona-principal { /*desuso temporal*/
+      padding: 20px;
+    }
+
+
+
+    .pie { /*Pie de pagina*/
+      
+      
+      background-color: #2d0f13;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+ 
+
+    </style>
+</head>
+
+
+
+<body>
+  <!-- _______________________________________________________HTML________________________________________________________________ -->
+  <!-- _______________________________________________________HTML________________________________________________________________ -->
+  <!-- _______________________________________________________HTML________________________________________________________________ -->
+
+  <div class="contenedor">
+    
+  <!-- _______________________________________________________Animacion________________________________________________________________ -->
+  <!-- _______________________________________________________Animacion________________________________________________________________ -->
+  <!-- _______________________________________________________Animacion________________________________________________________________ -->
+  
+    <div class="galeria">
+      <div class="fondo_superior"></div>  
+        <img src="animacion/gama-media.png" class="activa" alt="Imagen 1">
+        <img src="animacion/ga_10.png" alt="Imagen 2">
+        <img src="animacion/ga_20.png" alt="Imagen 3">
+        <img src="animacion/ga_30.png" alt="Imagen 4">
+        <img src="animacion/ga_40.png" alt="Imagen 5">
+        <img src="animacion/ga_50.png" alt="Imagen 6">
+        <img src="animacion/ga_40.png" alt="Imagen 5">
+        <img src="animacion/ga_30.png" alt="Imagen 4">
+        <img src="animacion/ga_20.png" alt="Imagen 3">
+        <img src="animacion/ga_10.png" alt="Imagen 2">
+        <img src="animacion/gama-media.png" alt="Imagen 1">
+        <img src="animacion/ga_+10.png" alt="Imagen 7">
+        <img src="animacion/ga_+20.png" alt="Imagen 8">
+        <img src="animacion/ga_+30.png" alt="Imagen 9">
+        <img src="animacion/ga_+20.png" alt="Imagen 8">
+        <img src="animacion/ga_+10.png" alt="Imagen 7">
+        <img src="animacion/gama-media.png" alt="Imagen 1">
+        <div class="texto_superiro"><h1 style="font-size: 50px;">LAS NOCHECITAS DEL DJ DAVID</h1>
+          <P>Estas son las nochecitas que pinchaba el DJ David</P> </div>
+          
+  
+  </div>
+
+
+  <!-- _______________________________________________________Texto________________________________________________________________ -->
+  <!-- _______________________________________________________Texto________________________________________________________________ -->
+  <!-- _______________________________________________________Texto________________________________________________________________ -->
+  
+  
+  
+  <div class="caja">
+    
+    <div class="contactanos"><a href="#">Platos</a></div> <!-- _Recordar_incluir_links_ -->
+
+    <div class="contactanos-2"><a href="#">Contacta</a></div>
+
+    <div class="contactanos"><a href="#">Personal</a></div>
+
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+ 
+  <div class="pie">
+   <center> 
+    
+ <p>Futuros links a redes sociales</p>  <!-- _recordar_implementar_logos_-->
+ <button onclick="toggleMenu()">Boton_por_implementar</button> <!-- _Boton_Llamar_funcion..._boton_feliz_-->
+</center>
+  </div>
+
+
+
+  <!-- _______________________________________________________ESCRIPTs________________________________________________________________ -->
+  <!-- _______________________________________________________ESCRIPTs________________________________________________________________ -->
+  <!-- _______________________________________________________ESCRIPTs________________________________________________________________ -->
+  
+  
+  
+  
+  <script> /*Estos ni se miran, si funcionan... que funcionan, no se tocan*/
+    
+    function toggleMenu() { /*Nombre de funcion*/   /*En desuso temporal*/
+      const menu = document.getElementById("menu-lateral"); /*Futura ID para menu lateral*/
+      menu.style.display = (menu.style.display === "none") ? "block" : "none"; /*Un if de toda la vida, el estilo del menu si esta en none que pase a bloque y si esta en bloque que pase a none (None es eliminado, Bloque es desplegado)*/
+    }
+
+    
+  </script>
+  <script> /*Carrusel de imagenes*/
+    const imagenes = document.querySelectorAll('.galeria img'); /*recojo todas las imagenes dentro de galeria, recordemos que las superpuse en la "hoja" CSS*/
+    let index = 0; /*Declaro una variable y la igualo a 0*/
+
+    setInterval(() => { /*inicalizar bucle "infinito"*/
+      imagenes[index].classList.remove('activa'); /*Desabhilita la imagen con la clase activa, por defecto la clase activa se la declare a la primera imagen, REVISAR ANIMACION*/
+      index = (index + 1) % imagenes.length; /*Le sumo 1 a la variable index... Si la cantidad total de imagenes es equivalente al valor de index. por ejemplo
+       todas las imagenes suman 8, si index(que empieza en 0), equivale a 8*, 8 entre 8 es 1 resto 0, el valor de index vuelve a valer 0, o lo que es lo mismo
+       comienza de nuevo la animacion
+       */
+      imagenes[index].classList.add('activa'); /*la proxima imagen pasa a tener el valor activo*/ 
+    }, 1500); //  Esto se repite cada 1,5 segundos, modificar este dato si se quiere variar el tiempo que tarda en cambiar de una imagen a otra
+  </script>
+
+</body>
+</html>
