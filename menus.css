@@ -26,7 +26,7 @@ body {
     font-size: 40px;
     text-align: center;
     text-shadow: 2px 2px red, 2px 2px white;
-    background: url(https://github.com/DAM1-COTARELO-25-26/proyecto-web-jd/blob/main/imagenes/Imagenes_Platos/comidas_esp/tortilla-1.jpg);
+    background: url(imagenes/Imagenes_Platos/comidas_esp/tortilla-1.jpg);
     background-size: cover;
     padding: 20px;
     
@@ -39,7 +39,7 @@ body {
     font-size: 40px;
     text-align: center;
     text-shadow: 2px 2px green, 2px 2px white;
-    background: url(https://github.com/DAM1-COTARELO-25-26/proyecto-web-jd/blob/main/imagenes/Imagenes_Platos/comidas_ital/pizza-italiana.png);
+    background: url(imagenes/Imagenes_Platos/comidas_ital/pizza-italiana.png);
       background-size: cover;
        padding: 20px;
        transition: filter 0.5s ease, transform 0.5s ease;
@@ -50,7 +50,7 @@ body {
     font-size: 40px;
     text-align: center;
     text-shadow: 2px 2px yellow, 2px 2px white;
-    background: url(https://github.com/DAM1-COTARELO-25-26/proyecto-web-jd/blob/main/imagenes/Imagenes_Platos/comidas_per/cebiche.png);
+    background: url(imagenes/Imagenes_Platos/comidas_per/cebiche.png);
       background-size: cover;
        padding: 20px;
        transition: filter 0.5s ease, transform 0.5s ease;
@@ -62,7 +62,7 @@ body {
     font-size: 40px;
     text-align: center;
     text-shadow: 2px 2px purple, 2px 2px white;
-    background: url(https://github.com/DAM1-COTARELO-25-26/proyecto-web-jd/blob/main/imagenes/Imagenes_Platos/comidas_japo/sushi-1.png);
+    background: url(imagenes/Imagenes_Platos/comidas_japo/sushi-1.png);
       background-size: cover;
        padding: 20px;
        transition: filter 0.5s ease, transform 0.5s ease;
