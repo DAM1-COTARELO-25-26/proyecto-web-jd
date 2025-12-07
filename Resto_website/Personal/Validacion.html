@@ -1,0 +1,57 @@
+<html>
+<body>
+    <section id="validacion">
+  <h2>Validación de plato</h2>
+  <form id="formPlato" action="/Resto_website/Personal/Validado.html" method="post">
+    <!-- Nombre del plato -->
+    <label for="plato">Nombre del plato:</label><br>
+    <input type="text" id="plato" name="plato" required><br><br>
+
+    <!-- Valoración -->
+    <label for="valoracion">Valoración:</label><br>
+    <select id="valoracion" name="valoracion" required>
+      <option value="" disabled selected>Selecciona</option>
+      <option value="1">1 estrella</option>
+      <option value="2">2 estrellas</option>
+      <option value="3">3 estrellas</option>
+      <option value="4">4 estrellas</option>
+      <option value="5">5 estrellas</option>
+    </select><br><br>
+
+    <!-- Comentarios -->
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Botón -->
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+<script>
+  const select = document.getElementById('valoracion');
+  const form = document.getElementById('formPlato');
+
+  select.addEventListener('change', () => {
+    switch (select.value) {
+      case "1":
+        form.style.backgroundColor = "#ffcccc"; // rojo claro
+        break;
+      case "2":
+        form.style.backgroundColor = "#ffe0b3"; // naranja suave
+        break;
+      case "3":
+        form.style.backgroundColor = "#ffffcc"; // amarillo claro
+        break;
+      case "4":
+        form.style.backgroundColor = "#ccffcc"; // verde claro
+        break;
+      case "5":
+        form.style.backgroundColor = "#cce5ff"; // azul claro
+        break;
+      default:
+        form.style.backgroundColor = "white";
+    }
+  });
+</script>
+
+</body>
+</html>

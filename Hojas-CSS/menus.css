@@ -1,0 +1,101 @@
+.cabecera {
+    background-color: white;
+    background-repeat: repeat;
+    padding: 20px;
+    
+}
+.titulo {
+    font-size: 48px;
+    padding: 2px;
+    position: relative;
+    left: 42%;
+
+}
+body {
+    background: black;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 100%;
+
+}
+
+.menus-españoles {
+
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px red, 2px 2px white;
+    background-image: url("../imagenes/Imagenes_Platos/comidas_esp/churrasco-1.png");
+    background-size: cover;
+    padding: 20px;
+    
+  transition: filter 0.5s ease, transform 0.5s ease;
+    
+}
+.menus-italianos {
+
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px green, 2px 2px white;
+    background-image:url("../imagenes/Imagenes_Platos/comidas_ital/pizza-italiana.png");
+      background-size: cover;
+       padding: 20px;
+       transition: filter 0.5s ease, transform 0.5s ease;
+}
+.menus-peru {
+
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px yellow, 2px 2px white;
+    background-image: url("../imagenes/Imagenes_Platos/comidas_per/cebiche.png");
+      background-size: cover;
+       padding: 20px;
+       transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.menus-japon {
+
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px purple, 2px 2px white;
+    background-image: url("../imagenes/Imagenes_Platos/comidas_japo/sushi-1.png");
+      background-size: cover;
+       padding: 20px;
+       transition: filter 0.5s ease, transform 0.5s ease;
+       
+}
+.pie {
+    background-color: white;
+    padding: 20px;
+    border: 5px solid grey;
+}
+.menus-españoles:hover {
+    
+  transform: scale(1.1);   /* Escala el elemento */
+    padding: 200px;
+    
+}
+.menus-italianos:hover {
+    padding: 200px;
+     transform: scale(1.1);   /* Escala el elemento */
+    padding: 200px;
+}
+.menus-peru:hover {
+    padding: 200px;
+     transform: scale(1.1);   /* Escala el elemento */
+    padding: 200px;
+}
+.menus-japon:hover {
+    padding: 200px;
+     transform: scale(1.1);   /* Escala el elemento */
+    padding: 200px;
+}
+
+
+
+
+

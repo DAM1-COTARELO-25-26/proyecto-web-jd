@@ -1,0 +1,109 @@
+    :root {
+      --bg: #fbddb5;          /* pergamino */
+      --text: #3b2a1a;        /* marrón oscuro */
+      --accent: #a67c52;      /* dorado viejo */
+      --accent2: #413223c2;     /* madera */
+      --card-bg: #f9b176;     /* pergamino claro */
+      --border: #ffc4b4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'MedievalSharp', cursive;
+      background: var(--bg);
+      color: var(--text);
+      text-align: center;
+    }
+    header {
+      background: var(--accent2);
+      border-bottom: 4px solid var(--accent);
+      padding: 20px;
+      text-align: center;
+    }
+  
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      color: var(--accent);
+      margin: 0;
+      text-shadow: 2px 2px #3b2a1a;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: var(--text);
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+     
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      color: var(--accent2);
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .elemento {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(107, 66, 38, 0.3);
+      transition: transform 0.3s;
+    }
+    .elemento:hover {
+      transform: scale(1.05);
+    }
+    .elemento img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      border: 3px solid var(--accent2);
+    }
+    .elemento h3 {
+      font-family: 'Cinzel', serif;
+      margin: 8px 0;
+      color: var(--accent2);
+    }
+    .elemento p {
+      font-size: 0.9rem;
+      color: #5a4633;
+    }
+    .price {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    footer {
+      background: var(--accent2);
+      border-top: 4px solid var(--accent);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: var(--bg);
+      font-family: 'Cinzel', serif;
+    }
