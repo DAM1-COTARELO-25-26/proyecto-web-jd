@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú del Restaurante</title>
+</head>
+<body>
+
+<h1>Menú generado desde XML + XSLT</h1>
+
+<div id="resultado"></div>
+
+<script>
+    // Cargar XML
+    const xml = new XMLHttpRequest();
+    xml.open("GET", "/datos/menu.xml", true);
+
+    // Cargar XSL
+    const xsl = new XMLHttpRequest();
+    xsl.open("GET", "/datos/html.xsl", true);
+
+    xml.onload = () => {
+        xsl.onload = () => {
+            const parser = new XSLTProcessor();
+            parser.importStylesheet(xsl.responseXML);
+
+            const resultado = parser.transformToFragment(xml.responseXML, document);
+            document.getElementById("resultado").appendChild(resultado);
+        };
+        xsl.send();
+    };
+
+    xml.send();
+</script>
+
+</body>
+</html>

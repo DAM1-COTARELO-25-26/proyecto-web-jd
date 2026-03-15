@@ -1,0 +1,19 @@
+<!ELEMENT menu (plato+)>
+<!ATTLIST menu
+    fechaPublicacion CDATA #REQUIRED>
+
+<!ELEMENT plato (nombre, precio, fechaRegistro, categorias, alergenos?, descripcion)>
+<!ATTLIST plato
+    id ID #REQUIRED
+    disponible (true|false) #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT fechaRegistro (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT categorias (categoria+)>
+<!ELEMENT categoria (#PCDATA)>
+
+<!ELEMENT alergenos (alergeno+)>
+<!ELEMENT alergeno (#PCDATA)>

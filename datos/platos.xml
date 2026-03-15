@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="html.xsl"?>
+<!DOCTYPE menu SYSTEM "validacion.dtd">
+
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="menu.xsd"
+      fechaPublicacion="2026-01-28">
+
+
+
+
+    <plato id="p01" disponible="true">
+        <nombre>Paella Valenciana</nombre>
+        <precio>14.50</precio>
+        <fechaRegistro>2025-12-10</fechaRegistro>
+        <categorias>
+            <categoria>Arroz</categoria>
+            <categoria>Tradicional</categoria>
+        </categorias>
+        <alergenos>
+            <alergeno>Marisco</alergeno>
+        </alergenos>
+        <descripcion>Paella clásica con pollo, conejo y verduras.</descripcion>
+    </plato>
+
+    <plato id="p02" disponible="true">
+        <nombre>Hamburguesa Gourmet</nombre>
+        <precio>11.90</precio>
+        <fechaRegistro>2025-11-02</fechaRegistro>
+        <categorias>
+            <categoria>Carnes</categoria>
+            <categoria>Moderno</categoria>
+        </categorias>
+        <alergenos>
+            <alergeno>Gluten</alergeno>
+            <alergeno>Lácteos</alergeno>
+        </alergenos>
+        <descripcion>Carne de vacuno con queso cheddar y pan brioche.</descripcion>
+    </plato>
+
+    <plato id="p03" disponible="false">
+        <nombre>Ensalada César</nombre>
+        <precio>8.50</precio>
+        <fechaRegistro>2025-10-15</fechaRegistro>
+        <categorias>
+            <categoria>Ensaladas</categoria>
+        </categorias>
+        <alergenos>
+            <alergeno>Huevo</alergeno>
+        </alergenos>
+        <descripcion>Lechuga romana con salsa césar casera.</descripcion>
+    </plato>
+
+    <plato id="p04" disponible="true">
+        <nombre>Sushi Variado</nombre>
+        <precio>16.00</precio>
+        <fechaRegistro>2025-09-20</fechaRegistro>
+        <categorias>
+            <categoria>Pescado</categoria>
+            <categoria>Japonés</categoria>
+        </categorias>
+        <alergenos>
+            <alergeno>Pescado</alergeno>
+            <alergeno>Soja</alergeno>
+        </alergenos>
+        <descripcion>Selección de makis, nigiris y sashimi.</descripcion>
+    </plato>
+
+    <plato id="p05" disponible="true">
+        <nombre>Pizza Margarita</nombre>
+        <precio>9.90</precio>
+        <fechaRegistro>2025-08-01</fechaRegistro>
+        <categorias>
+            <categoria>Italiano</categoria>
+        </categorias>
+        <alergenos>
+            <alergeno>Gluten</alergeno>
+            <alergeno>Lácteos</alergeno>
+        </alergenos>
+        <descripcion>Pizza clásica con tomate, mozzarella y albahaca.</descripcion>
+    </plato>
+
+    <plato id="p06" disponible="false">
+        <nombre>Tacos de Pollo</nombre>
+        <precio>7.50</precio>
+        <fechaRegistro>2025-07-12</fechaRegistro>
+        <categorias>
+            <categoria>Mexicano</categoria>
+        </categorias>
+        <descripcion>Tortillas de maíz con pollo marinado y salsa fresca.</descripcion>
+    </plato>
+
+    <plato id="p07" disponible="true">
+        <nombre>Ramen de Cerdo</nombre>
+        <precio>13.20</precio>
+        <fechaRegistro>2025-06-18</fechaRegistro>
+        <categorias>
+            <categoria>Japonés</categoria>
+            <categoria>Sopas</categoria>
+        </categorias>
+        <alergenos>
+            <alergeno>Gluten</alergeno>
+            <alergeno>Huevo</alergeno>
+        </alergenos>
+        <descripcion>Caldo tonkotsu con fideos y panceta.</descripcion>
+    </plato>
+
+    <plato id="p08" disponible="true">
+        <nombre>Crema de Calabaza</nombre>
+        <precio>6.80</precio>
+        <fechaRegistro>2025-05-05</fechaRegistro>
+        <categorias>
+            <categoria>Vegetariano</categoria>
+            <categoria>Sopas</categoria>
+        </categorias>
+        <descripcion>Crema suave de calabaza con toque de jengibre.</descripcion>
+    </plato>
+
+    <plato id="p09" disponible="true">
+        <nombre>Filete a la Plancha</nombre>
+        <precio>17.50</precio>
+        <fechaRegistro>2025-04-22</fechaRegistro>
+        <categorias>
+            <categoria>Carnes</categoria>
+        </categorias>
+        <descripcion>Filete de ternera acompañado de verduras asadas.</descripcion>
+    </plato>
+
+    <plato id="p10" disponible="true">
+        <nombre>Brownie con Helado</nombre>
+        <precio>5.90</precio>
+        <fechaRegistro>2025-03-10</fechaRegistro>
+        <categorias>
+            <categoria>Postres</categoria>
+        </categorias>
+        <alergenos>
+            <alergeno>Huevo</alergeno>
+            <alergeno>Lácteos</alergeno>
+            <alergeno>Gluten</alergeno>
+        </alergenos>
+        <descripcion>Brownie de chocolate caliente con helado de vainilla.</descripcion>
+    </plato>
+
+</menu>

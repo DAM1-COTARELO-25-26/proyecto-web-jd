@@ -20,7 +20,7 @@ body {
 
 }
 
-.menus-españoles {
+.Menus-Españoles {
 
     color: white;
     font-size: 40px;
@@ -68,6 +68,18 @@ body {
        transition: filter 0.5s ease, transform 0.5s ease;
        
 }
+.menus-ordenados {
+
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px purple, 2px 2px white;
+    background-color: azure;
+      background-size: cover;
+       padding: 20px;
+       transition: filter 0.5s ease, transform 0.5s ease;
+       
+}
 .pie {
     background-color: white;
     padding: 20px;
@@ -75,23 +87,23 @@ body {
 }
 .menus-españoles:hover {
     
-  transform: scale(1.1);   /* Escala el elemento */
+  transform: scale(1.01);   /* Escala el elemento */
     padding: 200px;
     
 }
 .menus-italianos:hover {
     padding: 200px;
-     transform: scale(1.1);   /* Escala el elemento */
+     transform: scale(1.01);   /* Escala el elemento */
     padding: 200px;
 }
 .menus-peru:hover {
     padding: 200px;
-     transform: scale(1.1);   /* Escala el elemento */
+     transform: scale(1.01);   /* Escala el elemento */
     padding: 200px;
 }
 .menus-japon:hover {
     padding: 200px;
-     transform: scale(1.1);   /* Escala el elemento */
+     transform: scale(1.01);   /* Escala el elemento */
     padding: 200px;
 }
 

@@ -77,3 +77,55 @@ El sitio está diseñado para atraer a:
 ## 📌 Objetivo General
 
 El sitio web de **Las nochecitas del DJ David** busca reflejar la elegancia y diversidad de la cocina internacional, brindando una experiencia digital que esté a la altura de la calidad gastronómica del restaurante “Las nochecitas del DJ David 
+
+🧩 Tecnologías Implementadas
+✔ XML
+Define la estructura del menú del restaurante: platos, precios, categorías, alérgenos y fechas.
+
+✔ XSD
+Valida el XML asegurando que los datos cumplen reglas como:
+
+tipos numéricos
+
+atributos obligatorios
+
+fechas válidas
+
+categorías estructuradas
+
+✔ XSLT
+Transforma el XML en HTML, generando una carta visual con:
+
+ordenación por precio
+
+estilos dinámicos según el valor del precio
+
+numeración automática de platos
+
+listado de categorías y alérgenos
+
+✔ XPath
+Permite realizar consultas como:
+
+platos disponibles
+
+platos caros
+
+platos por categoría
+
+búsqueda por texto
+
+conteo de elementos
+
+✔ JavaScript + XSLTProcessor
+Se utiliza para integrar el XML transformado dentro de la web sin usar iframes.
+
+🛠️ Funcionalidades Añadidas
+🔹 1. Transformación XML → HTML
+Se creó un archivo html.xsl que convierte el menú en una página HTML completa, con estilos, ordenación y estructura visual.
+
+🔹 2. Integración del menú en la web
+Para evitar problemas con iframes y navegadores, se implementó un script JavaScript que carga el XML y el XSLT y genera el HTML final dentro de la página:
+
+🎯 Objetivo Final
+El sitio web de Las nochecitas del DJ David busca reflejar la elegancia y diversidad de la cocina internacional, integrando tecnologías XML para ofrecer una carta dinámica, validada y visualmente atractiva, manteniendo una experiencia digital moderna y profesional.
